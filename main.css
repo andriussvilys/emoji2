@@ -2,6 +2,15 @@ body {
   background-color: #99eb99;
 }
 
+#btn {
+  background-color: #99eb99;
+  border: 1px solid blue;
+  color: blue;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 .circle {
   width: 100px;
   height: 100px;
@@ -17,31 +26,41 @@ body {
   display: flex;
   -webkit-box-shadow: 0 0 20px yellow;
           box-shadow: 0 0 20px yellow;
-  -webkit-animation: mushroom 5s ease-out infinite 5s;
-          animation: mushroom 5s ease-out infinite 5s;
+  -webkit-animation: mushroom 2s ease-out infinite;
+          animation: mushroom 2s ease-out infinite;
 }
 
-.circle .emoji {
+.circle #emoji {
   margin: auto;
   width: 70%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-animation: mushroom 5s ease-out infinite;
-          animation: mushroom 5s ease-out infinite;
 }
 
 @-webkit-keyframes mushroom {
   0% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
+    -webkit-box-shadow: 0 0 20px yellow;
+            box-shadow: 0 0 20px yellow;
   }
-  20% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+  40% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 50px #9af0ff;
+            box-shadow: 0 0 50px #9af0ff;
+  }
+  75% {
+    -webkit-box-shadow: 0 0 20px white;
+            box-shadow: 0 0 20px white;
   }
   100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-box-shadow: 0 0 20px yellow;
+            box-shadow: 0 0 20px yellow;
   }
 }
 
@@ -49,14 +68,26 @@ body {
   0% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
+    -webkit-box-shadow: 0 0 20px yellow;
+            box-shadow: 0 0 20px yellow;
   }
-  20% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+  40% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 50px #9af0ff;
+            box-shadow: 0 0 50px #9af0ff;
+  }
+  75% {
+    -webkit-box-shadow: 0 0 20px white;
+            box-shadow: 0 0 20px white;
   }
   100% {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-box-shadow: 0 0 20px yellow;
+            box-shadow: 0 0 20px yellow;
   }
 }
 /*# sourceMappingURL=main.css.map */
